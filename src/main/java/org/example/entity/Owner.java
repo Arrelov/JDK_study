@@ -6,16 +6,25 @@ package org.example.entity; // Описание Владельца
 //public void ageCounter()
 
 public class Owner {
-    private final String name = "Alexander";		// Имя
-    private final String surname = "Brechalov";	    // Фамилия
-    private int age = 47;		                    // Возраст (с 1974)
+    private final String name;          // Имя
+    private final String surname;	    // Фамилия
+    private int age;		            // Возраст (с 1974)
 
-    public Owner(){
+    public Owner(){    // конструктор класса по умолчанию
+        name = "Alexander";
+        surname = "Brechalov";
+        age = 47;
     }
 
-    public void OwnerPrint() {                   // метод для вывода данных о Владельце
+    public Owner(String name, String surname, int age){ // конструктор класса
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+    }
+
+    public void ownerPrint() {                   // метод для вывода данных о Владельце
         System.out.print("Owner description: ");
-        System.out.printf("%s %s age %s", name, surname, age);
+        System.out.printf("%s %s age %s\n", name, surname, age);
     }
 
     public String getName() {
