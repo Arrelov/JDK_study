@@ -8,12 +8,12 @@ public class Application {
     public static void main(String[] args) {
         //System.out.println("main programm is running");
         //Owner president = new Owner();
-        //Owner president = new Owner("Alexander", "Pushkin", 99);
+        Owner ownerOfHouse = new Owner("Alexander", "Pushkin", 222);
         //president.ownerPrint();
 
         House myHouse = new House(
-
-                5,
+                ownerOfHouse,
+                3,
                 "Izhevsk sity",
                 "Black");
         myHouse.somePrint();

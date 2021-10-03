@@ -1,6 +1,7 @@
 package org.example.entity; // Описание Владельца
 
-//import java.util.Calendar; // импортируем календарь
+import java.time.Year;
+import java.util.Calendar; // импортируем календарь
 //Calendar clndr = Calendar.getInstance();
 //Year = clndr.get(Calendar.YEAR);
 //public void ageCounter()
@@ -42,4 +43,6 @@ public class Owner {
     public void setAge(int age) {
         this.age = age;
     }
+
+
 }
